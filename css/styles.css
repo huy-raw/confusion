@@ -27,3 +27,13 @@ address {
     font-size: 80%;
     color: #0f0f0f;
 }
+
+@media  (max-width: 576px) {
+    .description {
+        display: none;
+    }
+
+    .our-history-container {
+        margin: auto 20px;
+    }
+}
