@@ -1,3 +1,5 @@
+
+
 .row-header {
   margin: 0px auto;
   padding: 0px;
@@ -37,6 +39,8 @@ body {
   background-color: #512da8;
 }
 
+
+
 @media (max-width: 576px) {
   /* .description {
         display: none;
@@ -46,3 +50,5 @@ body {
     margin: auto 25px;
   }
 }
+
+
