@@ -46,6 +46,19 @@ body {
   padding: 10px;
 }
 
+.carousel {
+  background:#512DA8 ;
+}
+
+.carousel-item {
+  height:900px;
+}
+
+.carousel-item img {
+  min-height: 100%;
+  margin: auto;
+}
+
 @media (max-width: 576px) {
   /* .description {
         display: none;
