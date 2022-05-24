@@ -59,6 +59,11 @@ body {
   margin: auto;
 }
 
+#carouselButton {
+  margin: auto;
+  z-index: 1;
+}
+
 @media (max-width: 576px) {
   /* .description {
         display: none;
@@ -68,5 +73,7 @@ body {
     margin: auto 25px;
   }
 }
+
+
 
 

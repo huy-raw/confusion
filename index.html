@@ -168,7 +168,17 @@
       </div>
     </div><!-- end col -->
   </div>
-
+  <!-- end div of carsousel  -->
+  <div class="row row content">
+    <div class="btn-group" id="carouselButton">
+      <button class="btn btn-danger btn-sm" id="carousel-play">
+        <span class="fa fa-pause"></span>
+      </button>
+      <button class="btn btn-danger btn-sm" id="carousel-play">
+        <span class="fa fa-play"></span>
+      </button>
+    </div>
+  </div>
 
 
   <div class="container">
@@ -294,7 +304,19 @@
   <script>
     $(document).ready(function () {
       $('[data-toggle="tooltip"]').tooltip({})
-    });</script>
+    });
+  </script>
+  <script>
+    $(document).ready(function (){
+      $("myCarousel").carousel({interval: 2000});
+      $("#carousel-pause").click(function {
+        $("#myCarousel").carousel('pause');
+      });
+      $("carousel-play").click(function {
+        $("#myCarousel").carousel('play');
+      });
+    });
+  </script>
 </body>
 
 </html>
