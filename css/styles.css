@@ -39,7 +39,12 @@ body {
   background-color: #512da8;
 }
 
-
+.tab-content {
+  border-left: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  padding: 10px;
+}
 
 @media (max-width: 576px) {
   /* .description {
