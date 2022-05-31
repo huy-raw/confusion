@@ -64,6 +64,14 @@ body {
   z-index: 1;
 }
 
+.modal-header {
+  background-color: rgb(255, 166, 0);
+}
+
+.modal-header h4 {
+  color: white;
+}
+
 @media (max-width: 576px) {
   /* .description {
         display: none;
