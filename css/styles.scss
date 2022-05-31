@@ -1,19 +1,24 @@
-$lt-gray: #ddd; 
-$background-dark: #512DA8;
-$background-light: #9575CD;
-$background-palette: #D1C4E9;
+$lt-gray: #ddd;
+$background-dark: #512da8;
+$background-light: #9575cd;
+$background-pale: #d1c4e9;
 
-
-//height variable
+// Height variables
 $carousel-item-height: 300px;
 
-@mixin  zero-margin($pad-up-dn, $pad-left-right) {
-    margin: 0px auto;
-    padding: $pad-up-dn, $pad-left-right;
+@mixin zero-margin($pad-up-dn, $pad-left-right) {
+    margin: 0 auto;
+    padding: $pad-up-dn $pad-left-right;
 }
 
 .row-header {
     @include zero-margin(0px, 0px);
+}
+
+.row-content {
+    @include zero-margin(50px, 0px);
+    border-bottom: 1px ridge;
+    min-height: 400px;
 }
 
 .footer {
@@ -29,13 +34,12 @@ $carousel-item-height: 300px;
 
 address {
     font-size: 80%;
-    margin: 0px;
+    margin: 0;
     color: #0f0f0f;
-    
 }
 
 body {
-    padding: 50px 0px 0px 0px;
+    padding: 50px 0 0;
     z-index: 0;
 }
 
@@ -50,48 +54,37 @@ body {
     padding: 10px;
 }
 
-
 .carousel {
     background: $background-dark;
 
     .carousel-item {
-
         height: $carousel-item-height;
-
         img {
-            min-height: 100%;
-            margin: auto;
+            position: absolute;
             top: 0;
             left: 0;
-            position: absolute;
+            min-height: 300px;
         }
     }
 }
 
-
 #carouselButton {
-    right: 0px;
     margin: auto;
-    position: absolute;
     z-index: 1;
 }
 
 .modal-content {
     border: none;
-
     .modal-header {
-        color: $lt-gray;
-        background-color: $background-dark;
-
-        .close {
-            color: $lt-gray;
+        background: $background-light;
+        color: floralwhite;
+        button {
+            color: floralwhite;
         }
     }
 
     .modal-body {
-
-        background-color: $background-pale;
+        background: $background-pale;
     }
-
 
 }
